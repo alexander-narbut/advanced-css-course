@@ -42,12 +42,10 @@ body {
     text-transform: uppercase;
     font-weight: 700;
     display: inline-block;
-    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
     letter-spacing: .2rem;
     transition: all .2s;
+
+    @include gradientText;
 
     &:hover {
         transform: skewY(1deg) skewX(15deg) scale(1.1);
